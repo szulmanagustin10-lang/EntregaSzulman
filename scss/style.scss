@@ -1017,6 +1017,12 @@ footer {
     margin: 40px auto;
     padding: 0 15px;
 }
+@media screen and (max-width: 768px) {
+  .links {
+    margin-left: 0;  /* Resetear el margin-left */
+    width: 100%;     /* Ocupar todo el ancho */
+  }
+}
 }
 
 // Improved focus visible for better accessibility
