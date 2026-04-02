@@ -1,84 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <!-- Meta tags básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portafolio de Agustín Szulman - Desarrollador, Inversor y Deportista. Descubre mis proyectos, experiencias y recorrido profesional.">
+    <meta name="keywords" content="desarrollador web, agustín szulman, portafolio, proyectos, inversiones">
+    <meta name="author" content="Agustín Szulman">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph (para redes sociales) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agustín Szulman - Portafolio | Desarrollador">
+    <meta property="og:description" content="Portafolio de Agustín Szulman - Desarrollador, Inversor y Deportista">
+    <meta property="og:image" content="https://szulmanagustin10-lang.github.io/EntregaSzulman/img/ftplaya.JPG">
+    <meta property="og:url" content="https://szulmanagustin10-lang.github.io/EntregaSzulman/">
+    <meta property="og:site_name" content="Agustín Szulman - Portafolio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agustín Szulman - Portafolio | Desarrollador">
+    <meta name="twitter:description" content="Descubre el portafolio profesional de Agustín Szulman">
+    <meta name="twitter:image" content="https://szulmanagustin10-lang.github.io/EntregaSzulman/img/ftplaya.JPG">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://szulmanagustin10-lang.github.io/EntregaSzulman/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-
+    
+    <title>Agustín Szulman - Desarrollador, Inversor, Deportista | Portafolio</title>
 </head>
 
 <body>
+    <!-- Skip to main content (accesibilidad) -->
+    <a href="#main-content" class="skip-link">Ir al contenido principal</a>
+
     <!-- Header con navegación principal -->
-    <header class="main-header">
-    <div class="container-header">
-        <div class="logo-area">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo ProyAgus" class="logo">
-            </a>
-            <span class="page-title">Agus-PRJ</span>
+    <header class="main-header" role="banner">
+        <div class="container-header">
+            <div class="logo-area">
+                <a href="index.html" aria-label="Inicio - Agustín Szulman">
+                    <img src="img/logo.png" alt="Logo de Agustín Szulman" class="logo" width="80" height="80" loading="eager">
+                </a>
+                <span class="page-title">Agus-PRJ</span>
+            </div>
+            
+            <nav class="links" role="navigation" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="pages/proyectos.html">Proyectos</a></li>
+                    <li><a href="pages/presentacion.html">Presentación</a></li>
+                    <li><a href="pages/timeline.html">Timeline</a></li>
+                    <li><a href="pages/gallery.html">Galería</a></li>
+                    <li><a href="pages/contacto.html" class="btn-contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        
-        <nav class="links">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/proyectos.html">Proyectos</a></li>
-                <li><a href="pages/presentacion.html">Presentación</a></li>
-                <li><a href="pages/timeline.html">Timeline</a></li>
-                <li><a href="pages/gallery.html">Galeria</a></li>
-                <li><a href="pages/contacto.html" class="btn-contacto">Contacto</a></li>
-            </ul>
+    </header>
+
+    <!-- Main content -->
+    <main class="contenedor-hero" id="main-content" role="main">
+        <section class="hero-info">
+            <h1 class="titulo-home">Agustín <span class="nombre-agus">Szulman</span></h1>
+            <p class="intro-texto">Desarrollador • Inversor • Deportista</p>
+
+            <div class="caja-introduccion" role="complementary" aria-label="Descripción del sitio">
+                <h2>¿Qué vas a encontrar acá?</h2>
+                <ul class="lista-index-nueva">
+                    <li><strong>Quién soy:</strong> presentación personal</li>
+                    <li><strong>Qué hago:</strong> mis proyectos y actividades</li>
+                    <li><strong>Recorrido:</strong> mi historia y experiencias</li>
+                </ul>
+            </div>
+
+            <div class="botones-hero">
+                <a href="pages/proyectos.html" class="btn-negro" aria-label="Ver mis proyectos">Ver Proyectos</a>
+                <a href="pages/contacto.html" class="btn-borde" aria-label="Contactarme">Contacto</a>
+            </div>
+        </section>
+
+        <section class="hero-visual" aria-label="Foto de presentación">
+            <img src="img/ftplaya.JPG" alt="Agustín Szulman en la playa" class="foto-inicio" width="420" height="520" loading="lazy">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <p class="footer-title">También pueden encontrarme en:</p>
+
+        <nav class="footer-social" aria-label="Redes sociales">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Seguir en Instagram">
+                <img src="img/instagram.jpg" alt="Icono de Instagram" width="32" height="32" loading="lazy">
+            </a>
+
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Suscribirse a YouTube">
+                <img src="img/youtube.jpg" alt="Icono de YouTube" width="32" height="32" loading="lazy">
+            </a>
+
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="Seguir en TikTok">
+                <img src="img/tiktok.jpg" alt="Icono de TikTok" width="32" height="32" loading="lazy">
+            </a>
         </nav>
-    </div>
-</header>
 
-
-    <main class="contenedor-hero">
-    <section class="hero-info">
-    <h1 class="titulo-home">Agustín <span class="nombre-agus">Szulman</span></h1>
-    <p class="intro-texto">Desarrollador • Inversor • Deportista</p>
-
-    <div class="caja-introduccion">
-        <h2>¿Qué vas a encontrar acá?</h2>
-        <ul class="lista-index-nueva">
-            <li><strong>Quién soy:</strong> presentación personal</li>
-            <li><strong>Qué hago:</strong> mis proyectos y actividades</li>
-            <li><strong>Recorrido:</strong> mi historia y experiencias</li>
-        </ul>
-    </div>
-
-    <div class="botones-hero">
-        <a href="pages/proyectos.html" class="btn-negro">Ver Proyectos</a>
-        <a href="pages/contacto.html" class="btn-borde">Contacto</a>
-    </div>
-</section>
-    <section class="hero-visual">
-        <img src="img/ftplaya.jpg" alt="Agustín" class="foto-inicio">
-    </section>
-</main>
-    <footer class="main-footer">
-    <p class="footer-title">También pueden encontrarme en:</p>
-
-    <div class="footer-social">
-        <a href="https://www.instagram.com/" target="_blank">
-            <img src="img/instagram.jpg" alt="Instagram">
-        </a>
-
-        <a href="https://www.youtube.com/" target="_blank">
-            <img src="img/youtube.jpg" alt="Youtube">
-        </a>
-
-        <a href="https://www.tiktok.com/" target="_blank">
-            <img src="img/tiktok.jpg" alt="Tiktok">
-        </a>
-    </div>
-
-    <p class="footer-copy">© 2026 Derechos reservados</p>
-</footer>
+        <p class="footer-copy">© 2026 Derechos reservados - Agustín Szulman</p>
+    </footer>
 
 </body>
 
